@@ -11,14 +11,14 @@
 #define NUM_COPTERS 8
 
 // max time of unbound state in ms
-#define MAX_UNBOUND_TIME 1000*60
+#define MAX_UNBOUND_TIME 1000*60*10000
 
 // max time of bound state in ms (should be greater than akku capacity)
-#define MAX_BOUND_TIME 1000*60*10
+#define MAX_BOUND_TIME 1000*60*10000
 
-//#define DEBUG
+#define DEBUG
 //#define DEBUG_TELEMETRY
-//#define SERIAL_ASCII
+#define SERIAL_ASCII
 //#define FIXED_CHANNEL 0x6E
 
 #endif
