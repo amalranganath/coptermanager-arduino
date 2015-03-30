@@ -60,7 +60,7 @@ void loop()
     #ifdef SERIAL_ASCII
     if (Serial.available() >= 7) {
         byte data[7];
-        Serial.readBytes(data, 7);
+        Serial.readBytes((char*)data, 7);
         DEBUG_MSG("read actual values " + String(data[0])+"\t"+String(data[1])+"\t"+String(data[2])+"\t"+String(data[3])+"\t"+String(data[4])+"\t"+String(data[5]));
         int copterid = hex2int(data, 0, 1);
         int command = hex2int(data, 2, 3);
