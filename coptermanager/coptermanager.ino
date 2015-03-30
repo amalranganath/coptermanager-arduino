@@ -72,6 +72,7 @@ void loop()
         int command = Serial.read();
         int value = Serial.read();
         int checksum = Serial.read();
+        Serial.read();
     #endif
     
         DEBUG_MSG("read values " + String(copterid) + " " + String(command) + " " + String(value));

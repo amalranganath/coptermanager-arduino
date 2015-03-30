@@ -16,9 +16,9 @@
 // max time of bound state in ms (should be greater than akku capacity)
 #define MAX_BOUND_TIME 1000*60*10000
 
-#define DEBUG
+//#define DEBUG
 //#define DEBUG_TELEMETRY
-#define SERIAL_ASCII
+//#define SERIAL_ASCII
 //#define FIXED_CHANNEL 0x6E
 
 #endif

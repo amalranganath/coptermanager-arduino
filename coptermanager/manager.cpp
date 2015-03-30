@@ -258,7 +258,7 @@ int dummy_response[7];
 inline void manager_copterloop(int copterid)
 {
     Session* session = sessions[copterid-1];
-    
+    /**
     if (session->bindTime == 0) {
         if ((millis() - session->initTime) > MAX_UNBOUND_TIME) {
             DEBUG_MSG("removing inactive copter " + String(copterid) + " (max unbound time reached)");
@@ -273,7 +273,7 @@ inline void manager_copterloop(int copterid)
             return;
         }
     }
-    
+    **/
     if (micros() > session->nextRunAt) {
         switch(session->copterType) {
             case HUBSAN_X4:
